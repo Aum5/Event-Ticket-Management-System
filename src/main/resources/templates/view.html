@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns ="www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<nav>
+    <ul>
+       		<li><a href="/">Home</a></li>
+            <li><a href="/add">Buy Tickets</a></li>
+            <li><a href="/view">Display Tickets</a></li>
+            <li><a href="/register"> Register </a> </li>	
+            <li><a href="/logout"> Logout </a> </li>	
+        </ul>
+</nav>
+
+
+<table border="1">
+	
+<tr>
+<th>Name</th>
+
+<th>Email</th>
+
+<th>Gender</th>
+
+<th>Phone Number</th>
+
+<th>Price</th>
+
+<th>Payment method</th>
+
+<th>Edit</th>
+
+<th>Delete</th>
+			
+</tr>
+<tr th:each="beat : ${Esports}">
+<td th:text="${beat.name}"></td>
+<td th:text="${beat.email}"></td>
+<td th:text="${beat.gender}"></td>
+<td th:text="${beat.number}"></td>
+<td th:text="${beat.price}"></td>
+<td th:text="${beat.pay}"></td>
+<td><a th:href="@{/edit/{id}(id=${beat.id})}">Edit</a> </td>
+<td><a th:href="@{/delete/{id}(id=${beat.id})}">Delete</a> </td>
+		
+
+</tr>
+</table>
+<table border="3px" id="recieptTable" sec:authorize="hasRole('GUEST')">
+        <tr>
+            
+            <td colspan="4">Subtotal:</td>
+            <td th:text="${subTotal}"></td>
+        </tr>
+        <tr>
+         
+            <td colspan="4">Taxes (13%):</td>
+            <td th:text="${tax}"></td>
+        </tr>
+        <tr>
+            
+            <td colspan="4">Total:</td>
+            <td th:text="${Total}"></td>
+        </tr>
+    </table>
+
+<link rel="stylesheet" type="text/css" media="all"
+    href="../static/css/Style3.css"
+    th:href="@{/css/Style3.css}" />
+
+</body>
+</html>

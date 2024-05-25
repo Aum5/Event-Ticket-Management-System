@@ -1,0 +1,97 @@
+@charset "ISO-8859-1";
+body, ul {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Style for the navigation bar */
+nav {
+    background-color: rgb(0, 0, 0); /* Background color for the navigation bar */
+    color: #fff; /* Text color for the navigation links */
+    text-align: center;
+    padding: 30px 0; /* Adjust the padding for height */
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+	font-family: "Montserrat-Medium", Helvetica;
+  font-weight: 500;	
+    display: inline; /* Display the list items horizontally */
+    margin-right: 40px; /* Add some spacing between the buttons */
+}
+
+/* Style for navigation links */
+a {
+    text-decoration: none;
+    color: #fff;
+    padding: 7px 20px; /* Adjust padding for button size */
+    border-radius: 5px;
+    background-color: rgb(0, 128, 255); /* Button background color */
+}
+a:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}
+
+
+      /* Style for the form container */
+.form-container {
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            padding: 0px 10px;
+            width: auto;
+            margin: 0px auto;
+            margin-top: 0px; /* Adjust the distance from the top */
+             position: relative;
+             display: flex;
+    flex-direction: column;
+    justify-content: center; /* Use absolute positioning */
+    overflow:hidden;
+        }
+
+        h1 {
+            color: #00aaff; /* Heading color */
+            text-align: center;
+        }
+
+.drop{
+	width: 100%;
+}
+label {
+    color: #fff; /* Text color for labels */
+    margin-right: 5px; /* Add some spacing between the labels and inputs */
+}
+        /* Style for form inputs */
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: auto;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .rad{	 display: flex;
+    flex-direction: row;
+    align-items: center; 
+            margin-right: 5px;
+        }
+         
+
+        /* Style for submit button */
+        input[type="submit"] {
+			text-align: center;
+            background-color: #00aaff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+             margin-top: 10px;
+             position: relative;
+                    
+}

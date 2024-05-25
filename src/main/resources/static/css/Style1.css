@@ -1,0 +1,115 @@
+
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the navigation bar */
+nav {
+    background-color: rgb(0, 0, 0); /* Background color for the navigation bar */
+    color: #fff; /* Text color for the navigation links */
+    text-align: center;
+    padding: 30px 0; /* Adjust the padding for height */
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline; /* Display the list items horizontally */
+    margin-right: 40px; /* Add some spacing between the buttons */
+}
+
+/* Style for navigation links */
+a {
+    text-decoration: none;
+   
+    color: #fff;
+    padding: 7px 20px; /* Adjust padding for button size */
+    border-radius: 5px;
+    background-color: rgb(0, 128, 255); /* Button background color */
+}
+
+a:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}
+
+/* Style for the background image */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../static/img/img2.jpg'); /* Set your background image */
+    background-size: cover;
+    background-attachment: fixed; /* Prevent the background from scrolling */
+    
+    margin: 0;
+    padding: 0; /* Remove padding entirely */
+    text-align: center; /* Center align the page content */
+    color: #fff; /* Text color for content on the background image */
+    position: relative; /* Add this for proper stacking */
+    min-height: 100vh; /* Make the body fill at least the viewport height */
+    overflow: hidden; /* Hide overflow to ensure the background image covers the entire viewport */
+}
+
+img {
+    width: 1800px;
+    height: 700px;
+}
+
+/* Style for the event details */
+h2, p {
+    color: #fff; /* Text color for event details */
+}
+
+h2, p {
+    text-align: center;
+}
+
+/* Style for the event details */
+h2 {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+p {
+    
+    margin: 10px 0;
+    font-size: 25px; /* Increase font size for Event Details */
+    font-weight: bold; /* Make it bold */
+}
+
+
+/* Style for event-des (on the left) */
+.event-des {
+    text-align: left;
+    color: ghostwhite;
+    position: absolute;
+    top:50px;
+    left: 0px; /* Place on the left */
+ bottom: 100px; /* Place on the top */
+    width: 75%; /* Adjust the width as needed */
+    padding: 20px; /* Add some padding */
+    box-sizing: border-box; /* Include padding in width calculation */
+    white-space: wrap; /* Prevent text from wrapping */
+}
+
+/* Style for event-info (on the right top) */
+.event-info {
+	 background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for event info */
+   
+    text-align: center;
+    color: ghostwhite;
+    position: absolute;
+    top:90px;
+    right: 50px; /* Place on the right */
+     /* Place on the top */
+    width: 20%; /* Adjust the width as needed */
+    padding: 20px; /* Add some padding */
+    box-sizing: border-box; /* Include padding in width calculation */
+    white-space: wrap; /* Prevent text from wrapping */
+}
+
+/* Additional styling for the event description */
+#des {
+    text-align: left;
+}9-1";

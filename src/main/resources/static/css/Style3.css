@@ -1,0 +1,86 @@
+@charset "ISO-8859-1";
+body, ul {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Style for the navigation bar */
+nav {
+    background-color: rgb(0, 0, 0); /* Background color for the navigation bar */
+    color: #fff; /* Text color for the navigation links */
+    text-align: center;
+    padding: 30px 0; /* Adjust the padding for height */
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+	font-family: "Montserrat-Medium", Helvetica;
+  font-weight: 500;	
+    display: inline; /* Display the list items horizontally */
+    margin-right: 40px; /* Add some spacing between the buttons */
+}
+
+/* Style for navigation links */
+a {
+    text-decoration: none;
+    color: #fff;
+    padding: 7px 20px; /* Adjust padding for button size */
+    border-radius: 5px;
+    background-color: rgb(0, 128, 255); /* Button background color */
+}
+a:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0px auto;
+}
+
+th {
+    background-color: #007bff; /* Blue header background color */
+    color: #fff; /* Header text color */
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Style table cells */
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Style table cells (odd rows) */
+tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Background color for odd rows */
+}
+
+/* Style table cells (even rows) */
+tr:nth-child(even) {
+    background-color: #fff; /* Background color for even rows */
+}
+
+/* Add hover effect to table rows */
+tr:hover {
+    background-color: #f2f2f2; /* Hover background color */
+    cursor: pointer;
+}
+
+/* Add border to table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+}
+
+/* Add a shadow to the table */
+table {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
